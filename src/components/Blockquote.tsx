@@ -2,14 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { createStyles, withStyles, WithStyles, Theme } from '@material-ui/core/styles'
 
 const styles = ({ palette }: Theme) => createStyles({
-    root: {
-        // fontStyle: "italic",
-        // color: palette.grey[800],
-        // borderLeft: `4px solid ${palette.grey.A100}`
-        marginInlineStart: '0',
-        marginBlockEnd: '0',
-        marginBlockStart: '0'
-    }
+    root: {}
 })
 
 interface IBlockquoteProps extends WithStyles<typeof styles> {
