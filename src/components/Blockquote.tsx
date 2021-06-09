@@ -3,9 +3,9 @@ import { createStyles, withStyles, WithStyles, Theme } from '@material-ui/core/s
 
 const styles = ({ palette }: Theme) => createStyles({
     root: {
-        fontStyle: "italic",
-        color: palette.grey[800],
-        borderLeft: `4px solid ${palette.grey.A100}`
+        // fontStyle: "italic",
+        // color: palette.grey[800],
+        // borderLeft: `4px solid ${palette.grey.A100}`
     }
 })
 
