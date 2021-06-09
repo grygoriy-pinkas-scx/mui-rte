@@ -250,6 +250,7 @@ const Toolbar: FunctionComponent<TToolbarProps> = (props) => {
                     if(style.name ==='quote' && active){
                        style.icon =  <FormatIndentDecreaseIcon/>
                     }
+                    console.log('style',active, style);
                 }
                 else {
                     if (style.style === "IMAGE" || style.style === "LINK") {
