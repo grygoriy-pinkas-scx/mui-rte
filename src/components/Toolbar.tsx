@@ -11,6 +11,7 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary'
 import FormatListNumberedIcon from '@material-ui/icons/FormatListNumbered'
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted'
 import FormatIndentIncreaseIcon from '@material-ui/icons/FormatIndentIncrease'
+import FormatIndentDecreaseIcon from '@material-ui/icons/FormatIndentDecrease'
 import CodeIcon from '@material-ui/icons/Code'
 import FormatClearIcon from '@material-ui/icons/FormatClear'
 import SaveIcon from '@material-ui/icons/Save'
@@ -245,6 +246,9 @@ const Toolbar: FunctionComponent<TToolbarProps> = (props) => {
                     const block = editorState.getCurrentContent().getBlockForKey(selection.getStartKey())
                     if (block) {
                         active = style.style === block.getType()
+                    }
+                    if(style.name ==='quote' && active){
+                       style.icon =  <FormatIndentDecreaseIcon/>
                     }
                 }
                 else {

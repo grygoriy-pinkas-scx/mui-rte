@@ -30,7 +30,7 @@ const ToolbarButton: FunctionComponent<IToolbarButtonProps> = (props) => {
                 props.onClick(props.style, props.type, elemId, props.inlineMode)
             }
         },
-        disabled: props.disabled || false
+        disabled: props.disabled || false 
     }
     if (props.icon) {
         return (
