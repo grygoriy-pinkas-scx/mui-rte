@@ -6,6 +6,9 @@ const styles = ({ palette }: Theme) => createStyles({
         // fontStyle: "italic",
         // color: palette.grey[800],
         // borderLeft: `4px solid ${palette.grey.A100}`
+        marginTop: '0',
+        marginBottom: '0',
+        marginRight: '0'
     }
 })
 
